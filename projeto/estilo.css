@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3e2663 !important;
+}
+
+.botao {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    list-style: none;
+    border: 1px solid white;
+}
+
+.botao a {
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+ul {
+    text-align: right;
+    margin: 10px 40px 0 0;
+}
+
+.hero {
+    background-image: url(../imagens/paisagem.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    border-top: 1px solid transparent;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.hero-content h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    text-shadow: 3px 3px 2px red;
+}
+
+.hero-content p{
+    border: rgba(255, 248, 248, .5);
+    margin-bottom: 20px;
+    padding: 5px;
+    border-style: solid;
+    display: inline-block;
+}
+
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80%;
+    margin: auto;
+}
+
+.content-section {
+    background-color: rgb(250, 250, 250);
+    padding: 15px;
+    margin-top: 15px;
+    overflow: auto;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card {
+    float: left;
+    background-color: rgba(0,0,0, .5);
+    text-transform: uppercase;
+}
+
+.card1, .card2 {
+    width: 32%;
+    margin-right: 2%;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0, .5);
+}
+
+.card3 {
+    background-color: rgba(0,0,0, .5);
+    width: 32%;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.hello {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hello h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: #ccc;
+    border-bottom-color: #bebdbd;
+    border-bottom-style: solid;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 2px;
+}
+
+.copy {
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    background-color: #726e6e;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 610px;
+    padding-right: 610px;
+}
