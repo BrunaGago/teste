@@ -6,45 +6,54 @@ body {
 }
 
 #principal {
-    width: 100%;
-    margin: auto;
+    width: 1024px;
+    margin: 20px auto;
 }
 
-.imagem-topo {
+.header-top {
     height: 50px;
     background: #162028;
-}
-
-ul {
-    margin-left: 280px;
-}
-
-li {
-    display: block;
-    float:left;
-    list-style: none;
-    font-size: 12px;
-    text-transform: uppercase;
-    margin: 10px;
-    background-color: #000000;
-    color: white;
-    border: 3px;
-    padding: 10px;
     position: relative;
 }
 
+.imagem-logo {
+    margin: 9px 0 0 150px;
+}
+
+.header-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    margin-right: 85px;
+}
+
+.header-nav li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 12px;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 5px;
+}
+
 h1 {
-    margin-top: 350px;
-    margin-left: 23px;
+    text-align: center;
 }
 
 p {
     text-indent: 15px;
-    height: 80%;
-    width: 50%;
+    margin: auto;
     font-family: 'Times New Roman', Times, serif;
     text-align: justify;
     color: rgba(0,0,0, .5);
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .card img {
