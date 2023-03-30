@@ -58,7 +58,7 @@ p {
     line-height: 2;
 }
 
-.content-section {
+.content-section img {
     width: 100%;
     text-align: center;
     font-size: 15px;
@@ -94,4 +94,17 @@ p {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 4px;
+}
+
+.h2 {
+    text-align: center;
+}
+
+.detalhe {
+    background-color: #003d52;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-image: url(../imagens/bg_detalhe.png);
 }
