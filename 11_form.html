@@ -8,83 +8,75 @@
 <meta name="description" content="lista de documentos">
 <meta name="keywords" content="html5, tecnologia">
 
-<style>
 
-    .formLogin {
-        width: 250px;
-        margin: 50px auto 0;
-    }
-
-    .formLogin fieldset {
-        background: #ccc;
-    }
-
-    .formLogin legend {
-        background: white;
-        display: inline-block;
-        padding: 10px;
-    }
-
-    .formLogin label {
-        margin-top: 25px;
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    #user, #pass, .botão {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 12px;
-        font-size: 18px;
-        font-family: sans-serif;
-        border: none;
-    }
-
-    #user, #pass{
-        background: #ddd;
-    }
-
-
-    #user:focus, #pass:focus{
-        background: white;
-    }
-
-    .botão {
-        margin-top: 15px;
-    }
-
-    #user {
-        margin-bottom: 15px;
-    }
-
-</style>
     </head>
     <body>
 <h1>Exemplo de Formulário</h1>
 
-<form action="http://google.com/search"
-method="GET" target="_blank">
-<fieldset>
-    <legend>Login</legend>
-    <label for="txtbusca">Faça uma busca</label>
-    <input type="text" name="q" id="txtbusca">
-    <label for="senha">Password:</label>
-    <input type="password" name="senha" id="senha">
-    <input type="submit" value="Login">
-</fieldset>
-</form>
-
 <form action="#"
 method="POST" class="formLogin">
 <fieldset>
-    <legend>Login</legend>
-    <label for="txtbusca"> Digite o seu usuário:</label>
-    <input type="text" name="q" id="user" autofocus>
-    <label for="pass">Digite a senha:</label>
-    <input type="password" name="pass" id="pass">
-    <input type="submit" value="Login" class="botão">
+    <legend>Dados pessoais</legend>
+    
+    <label>Email</label>
+    <input type="email" required>
+
+    <label>número de filhos</label>
+    <input type="number" min="0" max="1000" required> 
+ 
+    <br>
+    <label>nascimento</label>
+    <input type="date" min="1918-01-30" max="2018-01-30" required>
+
+    <p>Gênero:</p>
+    <label>
+    <input type="radio" name="genero" value="M">
+    Masculino
+    </label>
+    <label>
+    <input type="radio" name="genero" value="F">
+    Feminino
+    </label> 
+    <br>
+    <input type="hidden" name="expira" value="2018-12-30"
+
+    <label> Estado</label>
+    <select>
+        <option value="0">Selecione</option>
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="MG">Minas Gerais</option>
+    </select>
+ </fieldset>
+
+<fieldset>
+
+    <legend>Área de interesse</legend>
+    <label><input type="checkbox" name="HTML" value="HTML">HTML</label>
+    <label><input type="checkbox" name="CSS" value="HTML">CSS</label>
+    <label><input type="checkbox" name="JavaScript" value="HTML">JavaScript</label>
 </fieldset>
+    <input type="submit" value="mandar"
+
+<fieldset>
+    <legend>Mensagem</legend>
+    <textarea style="resize: none" name="msg" cols="30" rows="10" readonly></textarea>
+
+    <textarea style="resize: none" name="contrato" cols="30" rows="10">Aqui entra o texto do contrato que precisa ser aceito
+    </textarea>
+    <label><input type="checkbox">Li e aceito</label>
+
+    <input type="range">
+    <input type="time">
+    <input type="color">
+
+</fieldset>
+
+<br>
+<input type="submit" value="mandar">
+<input type="button" value="button">
+<input type="reset" value="limpar formulário">
+
 </form>
     </body>
 </html>
