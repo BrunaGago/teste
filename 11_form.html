@@ -19,10 +19,10 @@ method="POST" class="formLogin">
     <legend>Dados pessoais</legend>
     
     <label>Email</label>
-    <input type="email" required>
-
+    <input type="email" required maxlength="3" placeholder="digite um email válido">
+    <br>
     <label>número de filhos</label>
-    <input type="number" min="0" max="1000" required> 
+    <input type="number" min="0" max="1000" required step="0.5"> 
  
     <br>
     <label>nascimento</label>
@@ -38,9 +38,9 @@ method="POST" class="formLogin">
     Feminino
     </label> 
     <br>
-    <input type="hidden" name="expira" value="2018-12-30"
+    <input type="hidden" name="expira" value="2018-12-30">
 
-    <label> Estado</label>
+    <label>Estado</label>
     <select>
         <option value="0">Selecione</option>
         <option value="SP">São Paulo</option>
@@ -56,19 +56,26 @@ method="POST" class="formLogin">
     <label><input type="checkbox" name="CSS" value="HTML">CSS</label>
     <label><input type="checkbox" name="JavaScript" value="HTML">JavaScript</label>
 </fieldset>
-    <input type="submit" value="mandar"
 
 <fieldset>
     <legend>Mensagem</legend>
-    <textarea style="resize: none" name="msg" cols="30" rows="10" readonly></textarea>
+    <textarea style="resize: none" name="msg" cols="30" rows="10" maxlength="10"></textarea>
 
     <textarea style="resize: none" name="contrato" cols="30" rows="10">Aqui entra o texto do contrato que precisa ser aceito
     </textarea>
-    <label><input type="checkbox">Li e aceito</label>
+    <label><input type="checkbox" checked>Li e aceito</label>
 
-    <input type="range">
+    <input type="range" min="0" max="10" step="1">
     <input type="time">
     <input type="color">
+
+    <select size="5" multiple>
+        <option>opção 1</option>
+        <option>opção 2</option>
+        <option>opção 3</option>
+        <option>opção 4</option>
+        <option>opção 5</option>
+    </select>
 
 </fieldset>
 
